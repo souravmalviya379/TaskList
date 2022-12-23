@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(186, 180, 180);
+    font-family: sans-serif;
+}
+#container{
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    width: 92%;
+    margin: auto;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    height: 90vh;
+    text-overflow: auto;
+}
+
+/* Text content styling */
+#toDoTitleBox{
+    background-color: rgb(193, 190, 190);
+    width: 97%;
+    height: 3.5rem;
+    margin: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#toDoTitle{
+    background-color: transparent;
+    display: inline-block;
+    width: 85%; 
+    height: inherit;
+    background-color: inherit;
+    font-size: 1.4rem;
+    border: none;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+input:focus{
+    outline: none;
+}
+
+img{
+    display: inline-block;
+    margin-top: 0.5rem;
+    width: 5%;
+    height: 70%;
+}
+.add{
+    margin-right: 3%;
+}
+
+/* main section */
+.mark-complete, .mark-incomplete{
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    color: grey;
+}
+
+.mark-complete:hover, .mark-incomplete:hover{
+    color: black;
+    cursor: pointer;
+}
+.mark-incomplete{
+    right: 3%;
+}
+.mark-complete{
+    left: 4%;
+}
+
+#taskList li{
+    font-size: 1.2rem;
+    list-style: none;
+    color: darkgrey;
+}
+
+
+.delete{
+    display: inline-block;
+    vertical-align: bottom ;
+    width: 1rem;
+    height: inherit;
+    position: absolute;
+    right: 4rem;
+}
+
+.custom-checkbox{
+    border-radius: 50%; 
+    margin-right: 18px;
+}
+
+
+/* Footer */
+footer p{
+    display: inline;
+}
+footer p:first-child{
+    margin-left: 1.5%;
+    color: grey;
+}
+footer p:last-child{
+    margin-left: 70%;
+}
+footer p span{
+    display: inline-block;
+    color: grey;
+    margin: 5px;
+}
+
+footer p span:hover{
+    color: black;
+    cursor: pointer;
+}
+
+

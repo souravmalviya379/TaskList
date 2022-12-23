@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/cf3ddae05c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="toDoTitleBox">
+            <img src="images/text-icon.svg" alt=""> 
+            <input id="toDoTitle" placeholder="Type your ToDo task"/>
+            <img src="images/add-icon.svg" alt="" class="add">
+        </div>
+
+        <div>
+            <span class="mark-complete"><i class="fa-solid fa-check-double" style="color: grey;"></i> Complete all tasks</span>
+            <span class="mark-incomplete">Clear Completed</span>
+        </div>
+
+        <hr style="height: 0px; border: 1px solid lightgrey; margin-top: 2.5rem;">
+
+        <ul id="taskList">
+
+        </ul>
+
+        <hr style="height: 0px; border: 1px solid lightgrey; margin-top: 2.5rem;">
+
+        <footer>
+            <p><span id="taskCount"></span>&nbsp;&nbsp; tasks left</p>
+            <p>
+                <span id="all">All</span>
+                <span id="uncompleted">Uncompleted</span>
+                <span id="completed">Completed</span>
+            </p>
+        </footer>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
